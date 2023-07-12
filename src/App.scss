@@ -1,0 +1,20 @@
+@use './styles/fonts' as*;
+@use './styles/mixins' as*;
+@use './styles/variables' as*;
+
+body {
+    box-sizing: border-box;
+    margin:0;
+    font-family: $font;
+    background: $primary-background;
+}
+
+
+h1, h2, h3, h4 {
+    color: $primary-text;
+}
+
+p {
+    color: $secondary-text;
+}
+
