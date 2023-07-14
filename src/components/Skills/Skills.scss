@@ -1,0 +1,36 @@
+@use '../../styles/mixins' as*;
+@use '../../styles/variables' as*;
+
+
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 1.875rem;
+    &__outer-section {
+        display: flex;
+        flex-direction: column;
+        border-top:1px solid $primary-text;
+        padding-top:4.5rem;
+    }
+    &__skill {
+        width:21.5625rem;
+    }
+    &__technology {
+        font-size:3rem;
+        font-weight: 700;
+        margin:0;
+    }
+    &__experience{
+        width:21.625rem;
+    }
+    &__rings{
+        width:33.125rem;
+        align-self: flex-end;
+        position: relative;
+        right: -28rem;
+        top:-4.5rem;
+
+    }
+}
