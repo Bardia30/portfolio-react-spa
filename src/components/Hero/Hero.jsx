@@ -2,7 +2,7 @@ import React from 'react'
 import circle from '../../assets/images/pattern-circle.svg'
 import profilePic from '../../assets/images/image-profile-desktop.webp';
 import rings from '../../assets/images/pattern-rings.svg';
-
+import './Hero.scss';
 
 
 function Hero() {

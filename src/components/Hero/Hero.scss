@@ -1,0 +1,76 @@
+@use '../../styles/mixins' as*;
+@use '../../styles/variables' as*;
+
+
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:relative;
+    top:-10rem;
+    z-index: -1;
+    &__left-section{
+        display: flex;
+        flex-direction: column;
+        margin-top:4rem;
+    }
+    &__right-section{
+        display: flex;
+        position:relative;
+        right:11rem;
+        z-index: -1;
+    }
+    &__title{
+        font-size: 5.5rem;
+        font-family: 700;
+        letter-spacing: -2.5px;
+        line-height: 88px;
+        width: 44.3125rem;
+        margin-top:0;
+        margin-bottom:2.6875rem;
+    }
+
+    &__rings{
+        position: absolute;
+        top:8.3125rem;
+        left:-16.5625rem;
+    }
+
+    &__description{
+        font-size: 1.125rem;
+        font-weight:500;
+        line-height: 28px;
+        width: 27.8125rem;
+        margin-bottom:2.5rem;
+    }
+
+    &__cta{
+        width:8.75rem;
+        height:3rem;
+    }
+    &__circle{
+        height:8.0625rem;
+        width:8.0625rem;
+        align-self: flex-end;
+        position: relative;
+        bottom:5rem;
+        left:4rem;
+    }
+
+    &__profile{
+        width: 27.8125rem;
+        height: 45rem;
+    }
+}
+
+.btn{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size:1rem;
+    letter-spacing: 2.286px;
+    color: $primary-text;
+    border:none;
+    background: $primary-background;
+    border-bottom:2px solid $accent-color;
+}

@@ -1,0 +1,29 @@
+@use '../../styles/mixins' as*;
+@use '../../styles/variables' as*;
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2.6875rem;
+    padding-bottom: 4.5rem;
+    
+
+    &__logo{
+        margin:0;
+        font-size:2rem;
+        font-weight:700;
+        letter-spacing: -0.444px;
+    }
+    &__socials-section{
+        display: flex;
+        width:12rem;
+        justify-content: space-between;
+        padding-right: 1.84rem;
+    }
+    &__icon{
+        height:1.5rem;
+        width: 1.5rem;
+    }
+}
