@@ -8,6 +8,8 @@ import projectFive from '../../assets/images/thumbnail-project-5-large.webp';
 import projectSix from '../../assets/images/thumbnail-project-6-large.webp';
 import Project from './Project';
 
+import './Projects.scss';
+
 //make button another component
 //projects are hard coded for now
 // make each card a component
@@ -81,7 +83,7 @@ export default function Projects() {
                 <h1 className='projects__title'>Projects</h1>
                 <button className='projects__cta btn'>contact me</button>
             </section>
-            <div className='projects__cards-sections'>
+            <div className='projects__cards-section'>
                 {projects.map(project => (
                     <Project 
                         key={project.id}

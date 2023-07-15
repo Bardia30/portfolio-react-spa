@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import './Projects.scss';
 
 function Project({ image, title, technologies }) {
   return (

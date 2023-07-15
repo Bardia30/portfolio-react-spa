@@ -1,0 +1,57 @@
+@use '../../styles/mixins' as*;
+@use '../../styles/variables' as*;
+
+
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    &__upper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 5rem;
+    }
+    &__cta {
+        height: 2.375rem;
+    }
+    &__title{
+        font-size: 5.5rem;
+        font-weight: 700;
+        margin:0;
+    }
+    &__cards-section{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 1.5rem;
+    }
+    
+
+}
+
+
+.card{
+    &__image{
+        width:33.75rem;
+        height:25rem;
+        padding-bottom:1.25rem;
+    }
+    &__title{
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin:0;
+        padding-bottom:0.4375rem;
+    }
+    &__technologies{
+        display: flex;
+        column-gap: 1.125rem;    
+    }
+    &__tech{
+        text-transform: uppercase;
+        font-size: 1.125rem;
+        font-weight: 500;
+        margin:0;
+        padding-bottom:4.3125rem;
+    }
+}
