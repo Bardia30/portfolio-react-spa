@@ -18,13 +18,6 @@ function Project({ image, title, technologies }) {
           alt={title}
         />
       </div>
-      {/* <img 
-        onMouseEnter={() => { setIsHovered(true);}} 
-        onMouseLeave={() => { setIsHovered(false); }} 
-        className={isHovered ? "card__image card__image--hover" : 'card__image'} 
-        src={image} 
-        alt={title} 
-      /> */}
       <h4 className='card__title'>{title}</h4>
       <section className='card__technologies'>
         {technologies.map(tech => (
