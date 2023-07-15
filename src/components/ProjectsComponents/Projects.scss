@@ -35,6 +35,39 @@
         width:33.75rem;
         height:25rem;
         padding-bottom:1.25rem;
+        cursor: pointer;
+        position: relative;
+        top:-8rem;
+        &--hover {
+            filter: brightness(0.25);
+        }
+    }
+    &__image-div{
+        width:33.75rem;
+        height:25rem;
+        
+    }
+    &__buttons-visible{
+        display: flex;
+        flex-direction: column;
+        position:relative;
+        align-items: center;
+        top:8rem;
+        z-index: 1;
+    }
+    &__buttons-invisible {
+        visibility: hidden;
+    }
+    &__cta-code{
+        width: 8rem;
+        height:2rem;
+        background: none;
+    }
+    &__cta-project{
+        width: 10.75rem;
+        height:2rem;
+        margin-bottom: 3rem;
+        background: none;
     }
     &__title{
         text-transform: uppercase;
@@ -54,4 +87,5 @@
         margin:0;
         padding-bottom:4.3125rem;
     }
+    
 }
