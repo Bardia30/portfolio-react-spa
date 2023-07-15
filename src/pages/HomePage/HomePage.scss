@@ -1,0 +1,10 @@
+@use '../../styles/mixins' as*;
+@use '../../styles/variables' as*;
+
+
+main {
+    background-color: $primary-background;
+    
+    padding-left: 10.3125rem;
+    padding-right: 10.3125rem;
+}

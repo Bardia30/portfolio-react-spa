@@ -1,11 +1,14 @@
 import React from 'react';
 import ring from '../../assets/images/pattern-rings.svg';
+import './Contact.scss';
 
 //write form validation code:
 // - Receive an error message when the `form` is submitted if:
 //   - Any field is empty
 //   - The email address is not formatted correctly
 // - **Bonus**: Hook the form up so it sends and stores the user's enquiry (you can use a spreadsheet or Airtable to save the enquiries)
+//implement error stylings using ternary operators. isError ? 'form__message form__error' : "form_message"
+
 
 function Contact() {
     return (
@@ -18,9 +21,9 @@ function Contact() {
             </section>
             <form className='form' action="submit">
                 <input className='form__input' placeholder='NAME' type="text" name='name'/>
-                <input type="email" name='email' placeholder='EMAIL' className='from__input'/>
-                <textarea name="message" className="form__message"></textarea>
-                <button className='form__cta btn'>send message</button>
+                <input type="email" name='email' placeholder='EMAIL' className='form__input'/>
+                <textarea name="message" className="form__message" placeholder='MESSAGE'></textarea>
+                <button className='btn form__cta'>send message</button>
             </form>
         </div>
     )

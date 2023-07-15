@@ -1,0 +1,114 @@
+@use '../../styles/mixins' as*;
+@use '../../styles/variables' as*;
+
+
+
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    
+    &__left-section{
+        padding-top:5.25rem;
+    }
+    &__title{
+        margin:0;
+        font-size:5.5rem;
+        font-weight: 700;
+        letter-spacing: -2.5px;
+        text-transform: capitalize;
+    }
+    &__description{
+        margin:0;
+        font-size:1.125rem;
+        font-weight: 500;
+        line-height: 28px;
+        padding-top:2rem;
+        width: 27.8125rem;
+        padding-bottom: 2rem;
+    }
+    &__rings {
+        position:relative;
+        left: -23.125rem;
+        padding-bottom:3rem;
+    }
+}
+
+
+.form {
+    padding-top:5.25rem;
+    display: flex;
+    flex-direction: column;
+    &__input{
+        width: 26.3125rem;
+        height: 2.6875rem;
+        border:none;
+        background: $secondary-background;
+        border-bottom: solid 1px $primary-text;
+        padding-left: 1.5rem;
+        margin-bottom: 2rem;
+        &::placeholder{
+            color: $secondary-text;
+            font-size:1rem;
+            font-weight:500;
+            letter-spacing: -0.222px;
+        }
+        &:focus{
+            border:none;
+            border-bottom: solid 1px $accent-color;
+            outline: none;
+            color: $primary-text;
+            font-size:1rem;
+            font-weight:500;
+            letter-spacing: -0.222px;
+        }
+        &:not(:focus) {
+            font-size:1rem;
+            font-weight:500;
+            letter-spacing: -0.222px;
+            color: $secondary-text;
+        }
+    }
+    &__message{
+        width: 26.3125rem;
+        height: 6.6875rem;
+        border:none;
+        background: $secondary-background;
+        border-bottom: solid 1px $primary-text;
+        padding-left: 1.5rem;
+        margin-bottom: 2rem;
+        resize:none;
+        &::placeholder{
+            color: $secondary-text;
+            font-size:1rem;
+            font-weight:500;
+            letter-spacing: -0.222px;
+        }
+        &:focus{
+            border:none;
+            border-bottom: solid 1px $accent-color;
+            outline: none;
+            color: $primary-text;
+            font-size:1rem;
+            font-weight:500;
+            letter-spacing: -0.222px;
+            
+        }
+        &:not(:focus) {
+            font-size:1rem;
+            font-weight:500;
+            letter-spacing: -0.222px;
+            color: $secondary-text;
+        }
+    }
+    &__error {
+        border:none;
+            border-bottom: solid 1px $error-color;
+    }
+
+    &__cta {
+        background: $secondary-background;
+        width: 10.25em;
+        height: 3.5rem;
+        align-self: flex-end;
+    }
+}

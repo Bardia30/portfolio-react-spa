@@ -1,0 +1,25 @@
+@use '../../styles/mixins' as*;
+@use '../../styles/variables' as*;
+
+
+
+.footer {
+    
+    display: flex;
+    justify-content: space-between;
+    padding-bottom:5.75rem;
+    padding-top:3rem;
+    border-top: 1px solid $primary-text;
+    &__logo{
+        margin:0;
+        font-size:2rem;
+        font-weight:700;
+        letter-spacing: -0.444px;
+    }
+    &__outer-section{
+        background-color: $secondary-background;
+        padding-left: 10.3125rem;
+        padding-right: 10.3125rem;
+    }
+}
+

@@ -9,7 +9,7 @@
     align-items: center;
     position:relative;
     top:-10rem;
-    z-index: -1;
+    z-index: 0;
     &__left-section{
         display: flex;
         flex-direction: column;
@@ -73,4 +73,9 @@
     border:none;
     background: $primary-background;
     border-bottom:2px solid $accent-color;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    &:hover{
+        color: $accent-color;
+    }
 }
