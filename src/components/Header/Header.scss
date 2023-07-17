@@ -9,8 +9,6 @@
     padding-top: 2.6875rem;
     padding-bottom: 4.5rem;
     background: $primary-background;
-    padding-left: 10.3125rem;
-    padding-right: 10.3125rem;
     &__logo{
         margin:0;
         font-size:2rem;
@@ -18,6 +16,10 @@
         letter-spacing: -0.444px;
         z-index:1;
         position:relative;
+        @include tablet {
+            @include font;
+        }
+
     }
     &__socials-section{
         display: flex;

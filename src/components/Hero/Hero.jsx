@@ -9,7 +9,7 @@ function Hero() {
   return (
     <section className='hero'>
         <section className='hero__left-section'>
-            <h1 className='hero__title'>Nice to meet you! I'm Adam Keyes.</h1>
+            <h1 className='hero__title'>Nice to <br className='hero__br'/> meet you! I'm <br className='hero__br'/> Adam Keyes.</h1>
             <img className='hero__rings' src={rings} alt="rings" />
             <p className="hero__description">Based in the UK, I'm a front-end developer passionate about building accessible web apps that users love.</p>
             <button className='hero__cta btn'>contact me</button>

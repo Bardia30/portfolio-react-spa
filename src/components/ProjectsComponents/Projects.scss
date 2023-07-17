@@ -19,11 +19,23 @@
         font-size: 5.5rem;
         font-weight: 700;
         margin:0;
+        @include tablet{
+            font-size: 4.5rem;
+        }
+        @include desktop {
+            font-size: 5.5rem;
+        }
     }
     &__cards-section{
         display: flex;
         flex-wrap: wrap;
         column-gap: 1.5rem;
+        @include tablet {
+            column-gap: 1.1rem;
+        }
+        @include desktop {
+            column-gap: 1.5rem;
+        }
     }
     
 
@@ -41,11 +53,26 @@
         &--hover {
             filter: brightness(0.25);
         }
+        @include tablet {
+            width:21.5625rem;
+            height:15.8125rem;
+        }
+        @include desktop {
+            width:33.75rem;
+            height:25rem;
+        }
     }
     &__image-div{
         width:33.75rem;
         height:25rem;
-        
+        @include tablet {
+            width:21.5625rem;
+            height:15.8125rem;
+        }
+        @include desktop {
+            width:33.75rem;
+            height:25rem;
+        }
     }
     &__buttons-visible{
         display: flex;
@@ -54,9 +81,22 @@
         align-items: center;
         top:8rem;
         z-index: 1;
+        @include tablet {
+            display: none;
+        }
+        @include desktop {
+            display: flex;
+        }
     }
     &__buttons-invisible {
         visibility: hidden;
+        @include tablet {
+            visibility: visible;
+        }
+        @include desktop{
+            visibility: hidden;
+        }
+
     }
     &__cta-code{
         width: 8rem;
@@ -68,6 +108,12 @@
         height:2rem;
         margin-bottom: 3rem;
         background: none;
+        @include tablet {
+            margin-bottom: 2.5rem;
+        }
+        @include desktop {
+
+        }
     }
     &__title{
         text-transform: uppercase;

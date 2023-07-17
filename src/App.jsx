@@ -11,7 +11,6 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Header />
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='/project/:projectId' element={<ProjectPage />} />
