@@ -29,6 +29,9 @@
         @include tablet {
             right: 26.5rem;
         }
+        @include desktop {
+            right:11rem;
+        }
     }
     &__br {
         display: none;

@@ -10,6 +10,12 @@
     padding-bottom:5.75rem;
     padding-top:3rem;
     border-top: 1px solid $primary-text;
+    @include tablet {
+        padding-bottom:2.5rem;
+    }
+    @include desktop {
+        padding-bottom:5.75rem;
+    }
     &__logo{
         margin:0;
         font-size:2rem;
@@ -20,6 +26,14 @@
         background-color: $secondary-background;
         padding-left: 10.3125rem;
         padding-right: 10.3125rem;
+        @include tablet {
+            padding-left: 1.875rem;
+            padding-right: 1.875rem;
+        }
+        @include desktop {
+            padding-left: 10.3125rem;
+            padding-right: 10.3125rem;
+        }
     }
 }
 

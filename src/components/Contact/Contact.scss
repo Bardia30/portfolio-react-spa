@@ -6,9 +6,22 @@
 .contacts {
     display: flex;
     justify-content: space-between;
-    
+    @include tablet {
+        flex-direction:column;
+    }
+    @include desktop {
+        flex-direction:row;
+    }
     &__left-section{
         padding-top:5.25rem;
+        @include tablet {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        @include desktop {
+
+        }
     }
     &__title{
         margin:0;
@@ -16,6 +29,12 @@
         font-weight: 700;
         letter-spacing: -2.5px;
         text-transform: capitalize;
+        @include tablet {
+            font-size: 4.5rem;
+        }
+        @include desktop {
+            font-size:5.5rem;
+        }
     }
     &__description{
         margin:0;
@@ -25,11 +44,29 @@
         padding-top:2rem;
         width: 27.8125rem;
         padding-bottom: 2rem;
+        @include tablet {
+            text-align: center;
+        }
+        @include desktop {
+            text-align: none;
+        }
     }
-    &__rings {
+    &__rings-desktop {
+        display:none;
+        @include desktop{
+            display: block;
+            position:relative;
+            left: -23.125rem;
+            padding-bottom:3rem;
+        }
+    }
+    &__rings-tablet {
         position:relative;
-        left: -23.125rem;
+        left: -29.125rem;
         padding-bottom:3rem;
+        @include desktop {
+            display: none;
+        }
     }
 }
 
@@ -38,6 +75,12 @@
     padding-top:5.25rem;
     display: flex;
     flex-direction: column;
+    @include  tablet {
+        align-items: center;
+    }
+    @include desktop {
+        align-items: normal;
+    }
     &__input{
         width: 26.3125rem;
         height: 2.6875rem;
@@ -110,5 +153,14 @@
         width: 10.25em;
         height: 3.5rem;
         align-self: flex-end;
+        @include tablet {
+            align-self: center;
+            margin-left:18rem;
+        }
+        @include desktop {
+            align-self: flex-end;
+            margin-left: 0;
+        }
+
     }
 }

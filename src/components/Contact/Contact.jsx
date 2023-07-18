@@ -17,13 +17,15 @@ function Contact() {
                 <h1 className='contacts__title'>contact</h1>
                 <p className='contacts__description'>I would love to hear about your project and how I could help. Please
                     fill in the form, and I’ll get back to you as soon as possible.</p>
-                <img className='contacts__rings' src={ring} alt="rings" />
+                <img className='contacts__rings-desktop' src={ring} alt="rings" />
             </section>
             <form className='form' action="submit">
                 <input className='form__input' placeholder='NAME' type="text" name='name'/>
                 <input type="email" name='email' placeholder='EMAIL' className='form__input'/>
                 <textarea name="message" className="form__message" placeholder='MESSAGE'></textarea>
                 <button className='btn form__cta'>send message</button>
+                <img className='contacts__rings-tablet' src={ring} alt="rings" />
+
             </form>
         </div>
     )

@@ -3,7 +3,7 @@
 
 //desktop viewport mixin, refer to vriables for breakpoints
 @mixin desktop {
-    @media (min-width: 1440px){
+    @media (min-width: 1280px){
         @content;
     }
 }

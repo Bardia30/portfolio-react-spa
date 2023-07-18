@@ -32,6 +32,7 @@
         column-gap: 1.5rem;
         @include tablet {
             column-gap: 1.1rem;
+            padding-bottom: 5rem;
         }
         @include desktop {
             column-gap: 1.5rem;
@@ -62,6 +63,23 @@
             height:25rem;
         }
     }
+    &__image-visible {
+        width:33.75rem;
+        height:25rem;
+        padding-bottom:1.25rem;
+        
+        @include tablet {
+            width:21.5625rem;
+            height:15.8125rem;
+        }
+        @include desktop {
+            width:33.75rem;
+            height:25rem;
+        }
+    }
+    &__image-invisible {
+        display:none;
+    }
     &__image-div{
         width:33.75rem;
         height:25rem;
@@ -72,6 +90,9 @@
         @include desktop {
             width:33.75rem;
             height:25rem;
+        }
+        &--invisible {
+            display: none;
         }
     }
     &__buttons-visible{
@@ -97,6 +118,13 @@
             visibility: hidden;
         }
 
+    }
+    &__buttons-tablet-visible {
+        display: flex;
+        column-gap: 1rem;
+    }
+    &__buttons-tablet-invisible {
+        display: none;
     }
     &__cta-code{
         width: 8rem;
@@ -132,6 +160,12 @@
         font-weight: 500;
         margin:0;
         padding-bottom:4.3125rem;
+        @include tablet {
+            padding-bottom:1.25rem;
+        }
+        @include desktop {
+            padding-bottom:4.3125rem;
+        }
     }
     
 }
