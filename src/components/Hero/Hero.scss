@@ -5,17 +5,23 @@
 
 .hero {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     position:relative;
     top:-10rem;
     z-index: 0;
+    @include tablet{
+        flex-direction: row;
+    }
     &__left-section{
         display: flex;
         flex-direction: column;
-        margin-top:4rem;
+        align-items: center;
+        margin-top:-6rem;
         @include tablet {
             margin-top:9rem;
+            align-items: normal;
         }
         @include desktop {
             margin-top:4rem;
@@ -23,14 +29,15 @@
     }
     &__right-section{
         display: flex;
-        position:relative;
-        right:11rem;
+        position:absolute;
+        
         z-index: -1;
         @include tablet {
-            right: 26.5rem;
+            right: -2.5rem;
         }
         @include desktop {
-            right:11rem;
+            position: relative;
+            right:10rem;
         }
     }
     &__br {
@@ -43,16 +50,19 @@
         }
     }
     &__title{
-        font-size: 5.5rem;
+        font-size: 2.5rem;
         font-family: 700;
-        letter-spacing: -2.5px;
-        line-height: 88px;
-        width: 44.3125rem;
+        letter-spacing: -1.136px;
+        line-height: 40px;
+        width: 21.4375rem;
         margin-top:0;
-        margin-bottom:2.6875rem;
+        margin-bottom:1.5rem;
+        text-align: center;
         @include tablet {
             @include font($size: 4.5rem, $spacing:-2.045px, $line: 4.5rem);
             width: 44.3125rem;
+            text-align: left;
+            margin-bottom:2.6875rem;
         }
         @include desktop {
             font-size: 5.5rem;
@@ -67,18 +77,28 @@
 
     &__rings{
         position: absolute;
-        top:8.3125rem;
-        left:-16.5625rem;
+        top:0rem;
+        left:-21.5625rem;
+        z-index: -1;
+        @include tablet {
+            top:8.3125rem;
+            left:-16.5625rem;
+            z-index: 0;
+        }
     }
 
     &__description{
-        font-size: 1.125rem;
+        font-size: 1rem;
         font-weight:500;
-        line-height: 28px;
-        width: 27.8125rem;
-        margin-bottom:2.5rem;
+        line-height: 26px;
+        width: 21.4375rem;
+        margin-bottom:2rem;
+        text-align: center;
         @include tablet {
             @include font($size:1.125rem, $weight:500, $line:28px);
+            width: 27.8125rem;
+            text-align: left;
+            margin-bottom:2.5rem;
         }   
         @include desktop{
             font-size: 1.125rem;
@@ -109,7 +129,21 @@
             left:4rem;
         }
     }
-
+    &__profile-mobile {
+        width:10.875rem;
+        position:relative;
+        top:-8rem;
+    }
+    &__circle-mobile {
+        width: 8.0625rem;
+        height: 8.0625rem;
+        position: absolute;
+        right: -5rem;
+        top: 7.75rem;
+    }
+    &__upper-section {
+        display: flex;
+    }
     &__profile{
         width: 27.8125rem;
         height: 45rem;

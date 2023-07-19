@@ -6,7 +6,7 @@ function Project({ image, title, technologies }) {
 
   const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
 
-  const [isDesktop, setIsDesktop] = useState();
+  const [isDesktop, setIsDesktop] = useState(true);
 
   const handleResize = () => {
     setViewportWidth(window.innerWidth);
@@ -16,6 +16,10 @@ function Project({ image, title, technologies }) {
       setIsDesktop(true);
     }
   }
+
+  useEffect(()=> {
+    handleResize();
+  }, []);
 
   useEffect(()=>{
     window.onload = () => {

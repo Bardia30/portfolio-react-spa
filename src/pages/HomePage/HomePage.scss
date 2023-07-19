@@ -5,8 +5,8 @@
 main {
     background-color: $primary-background;
     
-    padding-left: 10.3125rem;
-    padding-right: 10.3125rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     overflow: hidden;
     @include tablet {
         padding-left: 1.875rem;

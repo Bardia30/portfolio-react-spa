@@ -6,17 +6,25 @@
 .projects{
     display: flex;
     flex-direction: column;
+    @include tablet {
+        border-top: 1px solid $primary-text;
+        padding-top: 5rem;
+        margin-top:-6rem;
+    }
     &__upper{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-bottom: 5rem;
+        padding-bottom: 2.5rem;
+        @include tablet {
+            padding-bottom: 5rem;
+        }
     }
     &__cta {
         height: 2.375rem;
     }
     &__title{
-        font-size: 5.5rem;
+        font-size: 2.5rem;
         font-weight: 700;
         margin:0;
         @include tablet{
@@ -64,10 +72,8 @@
         }
     }
     &__image-visible {
-        width:33.75rem;
-        height:25rem;
+        width: 100%;
         padding-bottom:1.25rem;
-        
         @include tablet {
             width:21.5625rem;
             height:15.8125rem;
@@ -159,7 +165,7 @@
         font-size: 1.125rem;
         font-weight: 500;
         margin:0;
-        padding-bottom:4.3125rem;
+        padding-bottom:1.25rem;
         @include tablet {
             padding-bottom:1.25rem;
         }

@@ -4,34 +4,53 @@
 
 .navbar{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding-top: 2.6875rem;
-    padding-bottom: 4.5rem;
+    padding-top: 1.25rem;
+    padding-bottom: 12.5rem;
     background: $primary-background;
+    @include tablet {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 2.6875rem;
+        padding-bottom: 4.5rem;
+    }
     &__logo{
         margin:0;
-        font-size:2rem;
+        font-size:1.5rem;
         font-weight:700;
-        letter-spacing: -0.444px;
+        letter-spacing: -0.333px;
         z-index:1;
+        padding-bottom: 1.25rem;
         position:relative;
         @include tablet {
             @include font;
+            padding-bottom:0 ;
         }
 
     }
     &__socials-section{
         display: flex;
-        width:12rem;
-        justify-content: space-between;
-        padding-right: 1.84rem;
+        width:9.5rem;
+        justify-content: center;
+        align-items: center;
+        column-gap: 3rem;
         z-index:1;
         position:relative;
+        @include tablet {
+            padding-right: 1.84rem;
+            width:12rem;
+            column-gap: 2.5rem;
+        }
     }
     &__icon{
-        height:1.5rem;
-        width: 1.5rem;
+        @include tablet {
+            height:1.5rem;
+            width: 1.5rem;
+        }
         &:hover{
             path{
                 fill: $accent-color;

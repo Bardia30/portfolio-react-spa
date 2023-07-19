@@ -5,34 +5,59 @@
 
 .skills {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    flex-wrap: nowrap;
     justify-content: space-between;
     row-gap: 1.875rem;
+    @include tablet {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 1.875rem;
+    }
     &__outer-section {
         display: flex;
         flex-direction: column;
         border-top:1px solid $primary-text;
         padding-top:4.5rem;
+        margin-top: -4.5rem;
+        @include tablet {
+            padding-top:4.5rem;
+            margin-top: 0;
+        }
     }
     &__skill {
-        width:21.5625rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        @include tablet {
+            width:21.5625rem;
+        }
     }
     &__technology {
-        font-size:3rem;
+        font-size:2rem;
         font-weight: 700;
         margin:0;
+        @include tablet {
+            font-size:3rem;
+        }
     }
     &__experience{
-        width:21.625rem;
+        @include tablet {
+            width:21.5625rem;
+        }
     }
     &__rings{
         width:33.125rem;
         align-self: flex-end;
         position: relative;
-        right: -28rem;
-        top:-4.5rem;
+        right: -22rem;
+top: -2.5rem;
         @include tablet {
             right: -23rem;
+            top:-4.5rem;
         }
         @include desktop {
             right: -28rem;
