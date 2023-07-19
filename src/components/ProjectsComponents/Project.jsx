@@ -28,7 +28,8 @@ function Project({ image, title, technologies }) {
     window.addEventListener('resize', handleResize);
   }, [viewportWidth])
 
-  
+  // onMouseLeave={() => { setIsHovered(false); }}
+  // onMouseEnter={() => { setIsHovered(true); }}
 
   return (
     <section className='card'>
@@ -38,11 +39,11 @@ function Project({ image, title, technologies }) {
           <button className='btn card__cta-code'>View Code</button>
         </div>
         <img
-          
           className={isHovered ? "card__image card__image--hover" : 'card__image'}
           src={image}
           alt={title}
         />
+      
       </div>
       <img
           

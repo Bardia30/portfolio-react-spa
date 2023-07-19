@@ -34,6 +34,7 @@
         
         @include tablet {
             width:21.5625rem;
+            align-items: flex-start;
         }
     }
     &__technology {

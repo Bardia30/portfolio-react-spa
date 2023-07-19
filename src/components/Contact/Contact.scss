@@ -20,9 +20,10 @@
         align-items: center;
         @include tablet {
             padding-top:5.25rem;
+            
         }
         @include desktop {
-
+            align-items: flex-start;
         }
     }
     &__title{
@@ -47,9 +48,12 @@
         padding-top:2rem;
         padding-bottom: 2rem;
         text-align: center;
-        
+        @include tablet {
+            width:27.8125rem;
+        }
         @include desktop {
             text-align: left;
+            
         }
     }
     &__rings-desktop {
@@ -79,11 +83,12 @@
 
 
 .form {
-    padding-top:5.25rem;
+    padding-top:3.125rem;
     display: flex;
     flex-direction: column;
     @include  tablet {
         align-items: center;
+        padding-top:3rem;
     }
     @include desktop {
         align-items: normal;

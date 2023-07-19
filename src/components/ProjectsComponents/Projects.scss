@@ -57,8 +57,8 @@
         height:25rem;
         padding-bottom:1.25rem;
         cursor: pointer;
-        position: relative;
-        top:-8rem;
+        
+        transition: filter 0.5s ease-in-out;
         &--hover {
             filter: brightness(0.25);
         }
@@ -89,13 +89,17 @@
     &__image-div{
         width:33.75rem;
         height:25rem;
+        transition: 0.5s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         @include tablet {
             width:21.5625rem;
             height:15.8125rem;
         }
         @include desktop {
             width:33.75rem;
-            height:25rem;
+            height:26.25rem;
         }
         &--invisible {
             display: none;
@@ -104,10 +108,10 @@
     &__buttons-visible{
         display: flex;
         flex-direction: column;
-        position:relative;
         align-items: center;
-        top:8rem;
+        
         z-index: 1;
+        position:absolute;
         @include tablet {
             display: none;
         }
@@ -116,12 +120,12 @@
         }
     }
     &__buttons-invisible {
-        visibility: hidden;
+        display: none;
         @include tablet {
-            visibility: visible;
+            display: flex;
         }
         @include desktop{
-            visibility: hidden;
+            display: none;
         }
 
     }
@@ -175,3 +179,4 @@
     }
     
 }
+
