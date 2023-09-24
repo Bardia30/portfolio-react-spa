@@ -53,8 +53,8 @@ function Project({ image, title, technologies }) {
         />
       <h4 className='card__title'>{title}</h4>
       <section className='card__technologies'>
-        {technologies.map(tech => (
-          <p className='card__tech'>{tech}</p>
+        {technologies.map((tech, i) => (
+          <p key={i} className='card__tech'>{tech}</p>
         ))}
       </section>
       <section className={isDesktop ? 'card__buttons-tablet-invisible' : 'card__buttons-tablet-visible'}>
