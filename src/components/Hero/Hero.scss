@@ -34,6 +34,7 @@
         z-index: -1;
         @include tablet {
             right: -2.5rem;
+            top:0;
         }
         @include desktop {
             position: relative;
@@ -130,9 +131,7 @@
         }
     }
     &__profile-mobile {
-        width:10.875rem;
-        position:relative;
-        top:-8rem;
+        width:14rem;
     }
     &__circle-mobile {
         width: 8.0625rem;
@@ -143,16 +142,22 @@
     }
     &__upper-section {
         display: flex;
+        margin-bottom: 10rem;
+        @include tablet{
+            margin-bottom: 0;
+        }
+
+
     }
     &__profile{
         width: 27.8125rem;
         height: 45rem;
         @include tablet {
-            width: 21.125rem;
-            height: 37.5rem;
+            width: 20rem;
+            height: 30rem;
         }
         @include desktop {
-            width: 27.8125rem;
+            width: 31rem;
             height: 45rem;
         }
     }
