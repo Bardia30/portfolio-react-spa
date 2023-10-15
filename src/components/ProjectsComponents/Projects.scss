@@ -162,7 +162,15 @@
     }
     &__technologies{
         display: flex;
-        column-gap: 1.125rem;    
+        column-gap: 1.125rem;   
+        
+        @include tablet {
+            width: 10rem;
+            flex-wrap: wrap; 
+        }
+        @include desktop {
+            flex-wrap: nowrap;
+        }
     }
     &__tech{
         text-transform: uppercase;
