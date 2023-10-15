@@ -1,19 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import Project from './Project';
-
 import './Projects.scss';
 
-//make button another component
-//projects are hard coded for now
-// make each card a component
-//technologies p elements enter programmatically
+
 export default function Projects() {
     
     const [projects, setProjects] = useState([]);
 
     useEffect(()=> {
-        axios.get('http://localhost:5050')
+        axios.get('https://bardiadevapi.onrender.com')
             .then(res => {
                 setProjects(res.data)
             })
@@ -30,7 +26,7 @@ export default function Projects() {
                 {projects.map(project => (
                     <Project 
                         key={project.id}
-                        image={`http://localhost:5050/${project.image}`}
+                        image={`https://bardiadevapi.onrender.com/${project.image}`}
                         title={project.title}
                         technologies={project.technologies}
                     />

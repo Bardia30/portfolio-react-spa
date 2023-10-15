@@ -9,7 +9,7 @@ function Skills() {
     const [skillsData, setSkillsData] = useState([]);
 
     useEffect(()=> {
-        axios.get('http://localhost:5050/skills')
+        axios.get('https://bardiadevapi.onrender.com/skills')
             .then(res => {
                 setSkillsData(res.data);
             })

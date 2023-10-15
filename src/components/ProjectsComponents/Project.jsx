@@ -9,27 +9,27 @@ function Project({ image, title, technologies }) {
   const [isDesktop, setIsDesktop] = useState(true);
 
   const handleResize = () => {
-    setViewportWidth(window.innerWidth);
-    if (viewportWidth < 1280) {
+    const newViewportWidth = window.innerWidth;
+    setViewportWidth(newViewportWidth);
+    if (newViewportWidth < 1280) {
       setIsDesktop(false);
     } else {
       setIsDesktop(true);
     }
   }
 
-  useEffect(()=> {
+  useEffect(() => {
+    
     handleResize();
-  }, []);
 
-  useEffect(()=>{
-    window.onload = () => {
-      handleResize();
-    };
+    
     window.addEventListener('resize', handleResize);
-  }, [viewportWidth])
 
-  // onMouseLeave={() => { setIsHovered(false); }}
-  // onMouseEnter={() => { setIsHovered(true); }}
+    
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [viewportWidth]);
 
   return (
     <section className='card'>
