@@ -4,8 +4,7 @@ import projects from '../../data/projects.json';
 
 export default function Projects() {
 
-    
-    
+
     // const [projects, setProjects] = useState([]);
 
     // useEffect(()=> {
