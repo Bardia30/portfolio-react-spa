@@ -1,13 +1,8 @@
-import React from 'react';
-import githubIcon from '../../assets/images/icon-github.svg';
-import linkedinIcon from '../../assets/images/icon-linkedin.svg';
-import twitterIcon from '../../assets/images/icon-twitter.svg';
-import frontendIcon from '../../assets/images/icon-frontend-mentor.svg';
 import './Header.scss';
 
 
 
-function Header() {
+const Header = () => {
   return (
     <header>
       <nav className='navbar'>

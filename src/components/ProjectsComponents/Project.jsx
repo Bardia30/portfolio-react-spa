@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import './Projects.scss';
 
-function Project({ image, title, technologies }) {
+const Project = ({ image, title, technologies }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   const [viewportWidth, setViewportWidth] = useState(window.innerWidth);

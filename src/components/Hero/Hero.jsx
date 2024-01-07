@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import circle from '../../assets/images/pattern-circle.svg'
 import profilePic from '../../assets/images/hero-image.jpeg';
 import rings from '../../assets/images/pattern-rings.svg';
 import './Hero.scss';
 
-
-function Hero() {
+const Hero = () => {
   const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
 
   const [isMobile, setIsMobile] = useState(false);

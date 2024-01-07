@@ -1,10 +1,8 @@
-import React from 'react';
-
 import Contact from '../Contact/Contact';
 import '../Contact/Contact.scss';
 import './Footer.scss';
 
-function Footer() {
+const Footer = () => {
   return (
     <div className='footer__outer-section'>
       <Contact />

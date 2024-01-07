@@ -6,7 +6,6 @@ export default function Projects() {
 
     
     
-    console.log(projects);
     // const [projects, setProjects] = useState([]);
 
     // useEffect(()=> {
