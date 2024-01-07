@@ -52,7 +52,7 @@ function Contact() {
 
 
     return (
-        <div className='contacts'>
+        <div id="contact" className='contacts'>
             <section className='contacts__left-section'>
                 <h1 className='contacts__title'>contact</h1>
                 <p className='contacts__description'>I would love to hear about your project and how I could help. Please

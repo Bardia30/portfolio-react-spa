@@ -3,6 +3,7 @@ import circle from '../../assets/images/pattern-circle.svg'
 import profilePic from '../../assets/images/hero-image.jpeg';
 import rings from '../../assets/images/pattern-rings.svg';
 import './Hero.scss';
+import { Link } from 'react-scroll';
 
 const Hero = () => {
   const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
@@ -40,7 +41,7 @@ const Hero = () => {
             <h1 className='hero__title'>Nice to <br className='hero__br'/> meet you! I'm <br className='hero__br'/> Bardia Dehbasti.</h1>
             <img className='hero__rings' src={rings} alt="rings" />
             <p className="hero__description">Software Engineer, specialized in React.JS, Next.JS, Node.JS, Express.JS and MongoDB, based in Toronto, ON.</p>
-            <button className='hero__cta btn'>contact me</button>
+            <Link to='contact' smooth={true} duration={500}><button className='hero__cta btn'>contact me</button></Link>
         </section>
         {isMobile ? null: 
           <div className='hero__right-section'>
