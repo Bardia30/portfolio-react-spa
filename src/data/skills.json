@@ -1,0 +1,52 @@
+[
+    {
+        "id": "f1b31c5e-d48b-4399-ba38-dcfc60761137",
+        "skill": "React.JS",
+        "years": 2
+    },
+    {
+        "id": "bd02e601-5c1c-4669-b648-23cac779f3b0",
+        "skill": "Next.JS",
+        "years": 1
+    },
+    {
+        "id": "76b0df9f-6c07-4f2d-b3e8-f5452e4d5d2d",
+        "skill": "JavaScript",
+        "years": 2
+    },
+    {
+        "id": "5ae8aabb-fedf-4024-948b-81a6c6a1863c",
+        "skill": "Python",
+        "years": 5
+    },
+    {
+        "id": "f522b25c-4f6f-428c-9f56-7f3fcd69caf3",
+        "skill": "Node.JS",
+        "years": 2
+    },
+    {
+        "id": "d3732d14-3a0c-4cdf-8852-d5f4c70b952b",
+        "skill": "Express.JS",
+        "years": 1
+    },
+    {
+        "id": "ce4ac320-e6c9-4976-842d-7cf355cff687",
+        "skill": "MySQL",
+        "years": 1
+    },
+    {
+        "id": "521bd6b4-f956-49f6-b837-c30cfb6aab4d",
+        "skill": "MongoDB",
+        "years": 1
+    },
+    {
+        "id": "0029a12b-79c4-472c-8d27-dfe18b399850",
+        "skill": "TypeScript",
+        "years": 1
+    },
+    {
+        "id": "857e6f63-7353-4284-92a9-7ba9ab328084",
+        "skill": "SASS",
+        "years": 2
+    }
+]

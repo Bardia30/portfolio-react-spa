@@ -1,20 +1,21 @@
-import React, { useEffect, useState } from 'react'
-import axios from 'axios';
 import Project from './Project';
 import './Projects.scss';
-
+import projects from '../../data/projects.json';
 
 export default function Projects() {
-    
-    const [projects, setProjects] = useState([]);
 
-    useEffect(()=> {
-        axios.get('https://bardiadevapi.onrender.com')
-            .then(res => {
-                setProjects(res.data)
-            })
-            .catch(err => console.log(err.message));
-    }, [])
+    
+    
+    console.log(projects);
+    // const [projects, setProjects] = useState([]);
+
+    // useEffect(()=> {
+    //     axios.get('https://bardiadevapi.onrender.com')
+    //         .then(res => {
+    //             setProjects(res.data)
+    //         })
+    //         .catch(err => console.log(err.message));
+    // }, [])
 
     return (
         <div className='projects'>
