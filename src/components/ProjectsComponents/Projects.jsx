@@ -1,6 +1,7 @@
 import Project from './Project';
 import './Projects.scss';
 import projects from '../../data/projects.json';
+import { Link } from 'react-scroll';
 
 export default function Projects() {
 
@@ -19,7 +20,7 @@ export default function Projects() {
         <div className='projects'>
             <section className='projects__upper'>
                 <h1 className='projects__title'>Projects</h1>
-                <button className='projects__cta btn'>contact me</button>
+                <Link to='contact' smooth={true} duration={500}><button className='projects__cta btn'>contact me</button></Link>
             </section>
             <div className='projects__cards-section'>
                 {projects.map(project => (
